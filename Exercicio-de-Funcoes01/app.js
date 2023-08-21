@@ -22,27 +22,27 @@ function main() {
 
     lateral = getFloatNumber("Digite o valor de um dos lados: ");
     let areaQuadrado = calcularAreaQuadrado(lateral);
-    console.log("Área do Quadrado: " + areaQuadrado.toFixed(2));
+    console.log("Área do Quadrado: " + areaQuadrado);
 
     // Cálculo da Área do Retângulo
     console.log("== Cálculo da Área do Retângulo ==");
     base = getFloatNumber("Digite o valor da base: ");
     altura = getFloatNumber("Digite o valor da altura: ");
     let areaRetangulo = calcularAreaRetangulo(base, altura);
-    console.log("Área do Retângulo: " + areaRetangulo.toFixed(2));
+    console.log("Área do Retângulo: " + areaRetangulo);
 
     // Cálculo da Área do Círculo
     console.log("== Cálculo da Área do Círculo ==");
     raio = getFloatNumber("Digite o valor do raio: ");
     let areaCirculo = calcularAreaCirculo(raio);
-    console.log("Área do Círculo: " + areaCirculo.toFixed(2));
+    console.log("Área do Círculo: " + areaCirculo);
 
     // Cálculo da Área do Triângulo
     console.log("== Cálculo da Área do Triângulo ==");
     base = getFloatNumber("Digite o valor da base: ");
     altura = getFloatNumber("Digite o valor da altura: ");
     let areaTriangulo = calcularAreaTriangulo(base, altura);
-    console.log("Área do Triângulo: " + areaTriangulo.toFixed(2));
+    console.log("Área do Triângulo: " + areaTriangulo);
 }
 
 function getFloatNumber(message) {
@@ -52,7 +52,7 @@ function getFloatNumber(message) {
 function calcularAreaTrapezio(baseMaior, baseMenor, altura, print) {
     let area = ((baseMaior + baseMenor) * altura) / 2;
     if (print) {
-        console.log("Área do Trapézio: " + area.toFixed(2));
+        console.log("Área do Trapézio: " + area);
     }
 }
 
